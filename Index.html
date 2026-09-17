@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Comissões Integradas | SIPAT 2026</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="background-glow glow-one"></div>
+    <div class="background-glow glow-two"></div>
+
+    <div id="confetti"></div>
+
+    <div class="page">
+
+        <header class="header">
+
+            <div class="brand">
+                COMISSÕES INTEGRADAS
+            </div>
+
+            <h1>
+                SIPAT <span>2026</span>
+            </h1>
+
+            <p>
+                Sorteio Geral dos Participantes
+            </p>
+
+        </header>
+
+
+        <main class="main-grid">
+
+            <!-- ============================= -->
+            <!-- PARTICIPANTES -->
+            <!-- ============================= -->
+
+            <section class="card participants-card">
+
+                <div class="section-header">
+
+                    <div class="section-icon">
+                        👥
+                    </div>
+
+                    <div>
+                        <h2>Participantes</h2>
+
+                        <p>
+                            Cadastre os colaboradores
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <label for="namesInput">
+                    Cole os nomes abaixo, um por linha
+                </label>
+
+
+                <textarea
+                    id="namesInput"
+                    placeholder="João Silva
+Maria Souza
+Carlos Oliveira
+Ana Santos
+João Silva"></textarea>
+
+
+                <button
+                    id="addButton"
+                    class="primary-button">
+
+                    + ADICIONAR PARTICIPANTES
+
+                </button>
+
+
+                <div
+                    id="message"
+                    class="message">
+                </div>
+
+
+                <!-- LISTA -->
+
+                <div class="list-header">
+
+                    <span>
+                        Lista cadastrada
+                    </span>
+
+                    <span
+                        id="listCount">
+                        0
+                    </span>
+
+                </div>
+
+
+                <div
+                    id="participantList"
+                    class="participant-list">
+
+                    <div class="empty-list">
+                        Nenhum participante cadastrado.
+                    </div>
+
+                </div>
+
+
+                <div class="stats">
+
+                    <div class="stat">
+
+                        <strong
+                            id="participantCount">
+                            0
+                        </strong>
+
+                        <span>
+                            DISPONÍVEIS
+                        </span>
+
+                    </div>
+
+
+                    <div class="stat">
+
+                        <strong
+                            id="winnerCount">
+                            0
+                        </strong>
+
+                        <span>
+                            GANHADORES
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <button
+                    id="clearButton"
+                    class="danger-button">
+
+                    🗑 LIMPAR TODOS
+
+                </button>
+
+            </section>
+
+
+            <!-- ============================= -->
+            <!-- SORTEIO -->
+            <!-- ============================= -->
+
+            <section class="card raffle-card">
+
+                <div class="section-header">
+
+                    <div class="section-icon raffle-icon">
+                        🎲
+                    </div>
+
+                    <div>
+                        <h2>Sorteio</h2>
+
+                        <p>
+                            Boa sorte a todos!
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div
+                    id="winnerBox"
+                    class="winner-box">
+
+                    <div class="winner-label">
+                        AGUARDANDO SORTEIO
+                    </div>
+
+
+                    <div
+                        id="winnerName"
+                        class="winner-name">
+
+                        —
+
+                    </div>
+
+                </div>
+
+
+                <button
+                    id="drawButton"
+                    class="draw-button"
+                    disabled>
+
+                    🎉 SORTEAR
+
+                </button>
+
+
+                <!-- HISTÓRICO -->
+
+                <div class="history">
+
+                    <div class="history-header">
+
+                        <h3>
+                            🏆 Ganhadores
+                        </h3>
+
+                        <span
+                            id="historyCount">
+                            0
+                        </span>
+
+                    </div>
+
+
+                    <div
+                        id="historyList"
+                        class="history-list">
+
+                        <div class="empty-history">
+                            Nenhum ganhador ainda.
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <button
+                    id="resetButton"
+                    class="reset-button">
+
+                    ↩ RECOMEÇAR SORTEIOS
+
+                </button>
+
+            </section>
+
+        </main>
+
+
+        <footer>
+
+            COMISSÕES INTEGRADAS
+            <span>•</span>
+            SIPAT 2026
+
+        </footer>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
